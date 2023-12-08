@@ -23,13 +23,13 @@ const Navbar = () => {
                         <div className={`bar ${open ? "active" : ""}`}/>
                     </BurgerButton>
                     <ul className={`collapsed ${open ? "expanded" : ""}`}>
-                      <li className='nav-item' onClick={() => setOpen(!open)}>
-                          <Link to='/' className="nav-link">
+                      <li className='nav-item'>
+                          <Link to='/' className="nav-link" onClick={() => setOpen(!open)}>
                               Heroes
                           </Link>
                       </li>
-                      <li className='nav-item' onClick={() => setOpen(!open)}>
-                          <Link to='/items' className="nav-link">
+                      <li className='nav-item'>
+                          <Link to='/items' className="nav-link" onClick={() => setOpen(!open)}>
                               Items
                           </Link>
                       </li>

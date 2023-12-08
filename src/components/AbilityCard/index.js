@@ -23,7 +23,7 @@ const AbilityCard = ({ability}) => {
                 }
             </div>
             <div className="ability-type">
-                {ability.behavior.length < 3
+                {ability.behavior.length < 5
                     ?   <p>Target: {ability.behavior.map(ab => (
                             <span key={ab} className="trg-type">{ab}&nbsp;</span>
                     ))}</p>
